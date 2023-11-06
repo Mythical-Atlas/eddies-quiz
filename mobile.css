@@ -4,7 +4,7 @@ body {
 
 .center_block {
     text-align: center;
-    background: lightgray;
+    background: rgb(222, 222, 222);
     width: 90%;
     margin: auto;
 }
@@ -36,7 +36,7 @@ body {
     float: left;
     display: block;
     font-size: 24px;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -60,6 +60,8 @@ body {
 
 .text_entry {
     width: 100%;
+    font-size: 30px;
+    height: 50px;
 }
 
 .button {

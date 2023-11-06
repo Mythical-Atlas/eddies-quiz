@@ -8,6 +8,7 @@ ideas:
 - sauces/condiments
 - backwards mode (ask what dishes get a certain ingredient)
 - allergens quiz
+- alcohol
 */
 
 let currentDish;
@@ -19,6 +20,68 @@ class Dish {
     constructor(name, ingredients) {
         this.name = name;
         this.ingredients = ingredients;
+    }
+}
+
+function resetSelection() {
+    document.getElementById("catselect").value = document.getElementById("appselect").defaultSelected;
+    document.getElementById("appselect").value = document.getElementById("appselect").defaultSelected;
+    document.getElementById("soupsaladselect").value = document.getElementById("soupsaladselect").defaultSelected;
+    document.getElementById("dressingselect").value = document.getElementById("dressingselect").defaultSelected;
+    document.getElementById("sideselect").value = document.getElementById("sideselect").defaultSelected;
+    document.getElementById("entreeselect").value = document.getElementById("entreeselect").defaultSelected;
+    document.getElementById("enhanceselect").value = document.getElementById("enhanceselect").defaultSelected;
+    document.getElementById("dessertselect").value = document.getElementById("dessertselect").defaultSelected;
+    document.getElementById("kidsselect").value = document.getElementById("kidsselect").defaultSelected;
+    
+    document.getElementById('appSelection').hidden = true
+    document.getElementById('soupSaladSelection').hidden = true
+    document.getElementById('dressingSelection').hidden = true
+    document.getElementById('sideSelection').hidden = true
+    document.getElementById('entreeSelection').hidden = true
+    document.getElementById('enhanceSelection').hidden = true
+    document.getElementById('dessertSelection').hidden = true
+    document.getElementById('kidsSelection').hidden = true
+
+    document.getElementById('question').hidden = true
+    document.getElementById('answer').hidden = true
+    document.getElementById('selection').hidden = false
+}
+
+function selectCat() {
+    let select = document.getElementById("catselect");
+    let selectedIndex = select.selectedIndex;
+    let name = select.options[select.selectedIndex].text;
+
+    resetSelection();
+
+    document.getElementById("catselect").selectedIndex = selectedIndex;
+
+    switch(name) {
+        case "Appetizers":
+            document.getElementById("appSelection").hidden = false;
+            break;
+        case "Salads, Soups, and Bread":
+            document.getElementById("soupSaladSelection").hidden = false;
+            break;
+        case "Salad Dressings":
+            document.getElementById("dressingSelection").hidden = false;
+            break;
+        case "Sides":
+            document.getElementById("sideSelection").hidden = false;
+            break;
+        case "Entrees":
+            document.getElementById("entreeSelection").hidden = false;
+            break;
+        case "Enhancements":
+            document.getElementById("enhanceSelection").hidden = false;
+            break;
+        case "Desserts":
+            document.getElementById("dessertSelection").hidden = false;
+            break;
+        case "Children's Menu":
+            document.getElementById("kidsSelection").hidden = false;
+            break;
     }
 }
 
@@ -394,12 +457,15 @@ function selectKidsMeal() {
     selectItem();
 }
 
+//function resetDish() {}
+
 function selectItem() {
     document.getElementById("qsttext").innerHTML = "What are the ingredients for the <b>" + currentDish.name + "</b>? (Hint: There are " + currentDish.ingredients.length + ".)";
 
     document.getElementById("subtxt").value = "";
 
     document.getElementById('selection').hidden = true;
+    document.getElementById('answer').hidden = true;
     document.getElementById('question').hidden = false;
 
     document.getElementById("subtxt").focus();
@@ -504,7 +570,7 @@ function submitAnswer() {
         document.getElementById("note2txt").innerHTML = "<b>Points were not counted for each of the following.</b><ul>";
 
         for(let i = 0; i < incorrectTips.length; i++) {
-            document.getElementById("note2txt").innerHTML += "<li>You entered <span class=\"incorrect\">" + incorrectTips[i][1] + "</span>, but <span class=\"correct\">" + incorrectTips[i][0] + "</span> would correct.</li>";
+            document.getElementById("note2txt").innerHTML += "<li>You entered <span class=\"incorrect\">" + incorrectTips[i][1] + "</span>, but <span class=\"correct\">" + incorrectTips[i][0] + "</span> would be correct.</li>";
         }
 
         document.getElementById("note2txt").innerHTML += "</ul>";
@@ -519,30 +585,12 @@ function submitAnswer() {
     document.getElementById('answer').hidden = false
 }
 
-function resetSelection() {
-    document.getElementById("appselect").value = document.getElementById("appselect").defaultSelected;
-    document.getElementById("soupsaladselect").value = document.getElementById("soupsaladselect").defaultSelected;
-    document.getElementById("dressingselect").value = document.getElementById("dressingselect").defaultSelected;
-    document.getElementById("sideselect").value = document.getElementById("sideselect").defaultSelected;
-    document.getElementById("entreeselect").value = document.getElementById("entreeselect").defaultSelected;
-    document.getElementById("enhanceselect").value = document.getElementById("enhanceselect").defaultSelected;
-    document.getElementById("dessertselect").value = document.getElementById("dessertselect").defaultSelected;
-    document.getElementById("kidsselect").value = document.getElementById("kidsselect").defaultSelected;
-
-    document.getElementById('question').hidden = true
-    document.getElementById('answer').hidden = true
-    document.getElementById('selection').hidden = false
-}
-
 document.addEventListener("DOMContentLoaded", function(event) {resetSelection()});
 
 window.addEventListener('keydown', function(event) {
     if(event.key === 'Enter') {
         if(document.getElementById('question').hidden == false) {
             submitAnswer();
-        }
-        else if(document.getElementById('answer').hidden == false) {
-            resetSelection();
         }
     }
 });
