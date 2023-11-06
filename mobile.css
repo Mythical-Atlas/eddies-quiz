@@ -3,78 +3,69 @@ body {
 }
 
 .center_block {
-    text-align: center;
     background: rgb(222, 222, 222);
     width: 90%;
-    max-width: 2000px;
     margin: auto;
-}
-
-.center_center_block {
-    /*margin: auto;
-    max-width: 2000px;*/
+    max-width: 1000px;
 }
 
 .header {
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 2vh;
     margin-bottom: 0px;
-    font-size: 100px;
+    text-align: center;
+    font-size: 6vh;
     color: #6d2c2c;
 }
 .subheader {
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 24px;
+    text-align: center;
+    font-size: 2vh;
 }
 
-.header_separator {
+.navigation {
     overflow: hidden;
     background: #6d2c2c;
 }
-.header_separator a {
+.navigation a {
     float: left;
     display: block;
-    font-size: 24px;
+    font-size: 2vh;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vh;
     text-decoration: none;
 }
-.header_separator a:hover {
+.navigation a:hover {
     background-color: #d49696;
     color: black;
 }
 
 .content {
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
     text-align: center;
-    font-size: 30px;
+    font-size: 2vh;
 }
 
 .drop_down {
     width: 100%;
-    font-size: 30px;
-    height: 50px;
-    max-width: 1000px;
+    font-size: 2vh;
+    height: 4vh;
+    max-width: 500px;
 }
 
 .text_entry {
     width: 100%;
-    font-size: 30px;
-    height: 50px;
+    font-size: 2vh;
+    height: 4vh;
 }
 
 .button {
-    padding: 15px 32px;
-    font-size: 30px;
+    padding: 1vh;
+    font-size: 2vh;
     width: 100%;
-    max-width: 1000px;
+    max-width: 500px;
 }
 .centered {
     text-align: center;
@@ -93,14 +84,12 @@ body {
 .copyright {
     float: left;
     text-align: left;
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    font-size: 2vh;
+    padding: 1vh;
 }
 .version {
     float: right;
     text-align: right;
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    font-size: 2vh;
+    padding: 1vh;
 }

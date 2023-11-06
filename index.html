@@ -12,15 +12,15 @@
         <div class="center_block">
             <h1 class="header">Eddie's Quiz</h1>
             <p class="subheader"><i>An unofficial menu study tool created by Ben Correll</i></p>
-            <div class="header_separator">
+            <div class="navigation">
                 <a href="mobile.html">Dish Ingredients</a>
-                <a href="contact.html">Contact</a>
-                <a href="index.html" style="float:right">Desktop Website</a>
+                <a href="contact.html" style="float:right">Contact</a>
+                <!--<a href="index.html" style="float:right">Desktop Website</a>-->
             </div>
-            <div class="center_center_block">
-                <div id="selection" class="content">
-                    <div id="catagorySelection" class="content">
-                        <label for="catselect">Catagories:</label>
+            <div class="content">
+                <div id="selection">
+                    <div id="categorySelection">
+                        <label for="catselect">Categories:</label>
                         <br>
                         <select name="catselect" id="catselect" class="drop_down" onchange="selectCat()">
                             <option></option>
@@ -34,7 +34,8 @@
                             <option>Children's Menu</option>
                         </select>
                     </div>
-                    <div id="appSelection" class="content" hidden=true>
+                    <div id="appSelection" hidden=true>
+                        <br>
                         <label for="appselect">Appetizers:</label>
                         <br>
                         <select name="appselect" id="appselect" class="drop_down">
@@ -56,10 +57,10 @@
                             <option>Hot Appetizer Platter</option>
                             <option>Chilled Appetizer Platter</option>
                         </select>
-                        <br>
+                        <br><br>
                         <button onclick="selectApp()" class="button">Select</button>
                     </div>
-                    <div id="soupSaladSelection" class="content" hidden=true>
+                    <div id="soupSaladSelection" hidden=true>
                         <label for="soupsaladselect">Soups, Salads, and Bread:</label>
                         <select name="soupsaladselect" id="soupsaladselect" class="drop_down">
                             <option></option>
@@ -74,7 +75,7 @@
                         </select>
                         <button onclick="selectSoupSalad()" class="button">Select</button>
                     </div>
-                    <div id="dressingSelection" class="content" hidden=true>
+                    <div id="dressingSelection" hidden=true>
                         <label for="dressingselect">Salad Dressings:</label>
                         <select name="dressingselect" id="dressingselect" class="drop_down">
                             <option></option>
@@ -88,7 +89,7 @@
                         </select>
                         <button onclick="selectDressing()" class="button">Select</button>
                     </div>
-                    <div id="sideSelection" class="content" hidden=true>
+                    <div id="sideSelection" hidden=true>
                         <label for="sideselect">Sides:</label>
                         <select name="sideselect" id="sideselect" class="drop_down">
                             <option></option>
@@ -111,7 +112,7 @@
                         </select>
                         <button onclick="selectSide()" class="button">Select</button>
                     </div>
-                    <div id="entreeSelection" class="content" hidden=true>
+                    <div id="entreeSelection" hidden=true>
                         <label for="entreeselect">Entrees:</label>
                         <select name="entreeselect" id="entreeselect" class="drop_down">
                             <option></option>
@@ -140,7 +141,7 @@
                         </select>
                         <button onclick="selectEntree()" class="button">Select</button>
                     </div>
-                    <div id="enhanceSelection" class="content" hidden=true>
+                    <div id="enhanceSelection" hidden=true>
                         <label for="enhanceselect">Enhancements:</label>
                         <select name="enhanceselect" id="enhanceselect" class="drop_down">
                             <option></option>
@@ -160,7 +161,7 @@
                         </select>
                         <button onclick="selectEnhance()" class="button">Select</button>
                     </div>
-                    <div id="dessertSelection" class="content" hidden=true>
+                    <div id="dessertSelection" hidden=true>
                         <label for="dessertselect">Desserts:</label>
                         <select name="dessertselect" id="dessertselect" class="drop_down">
                             <option></option>
@@ -175,7 +176,7 @@
                         </select>
                         <button onclick="selectDessert()" class="button">Select</button>
                     </div>
-                    <div id="kidsSelection" class="content" hidden=true>
+                    <div id="kidsSelection" hidden=true>
                         <label for="kidsselect">Children's Meals:</label>
                         <select name="kidsselect" id="kidsselect" class="drop_down">
                             <option></option>
@@ -185,7 +186,7 @@
                         <button onclick="selectKidsMeal()" class="button">Select</button>
                     </div>
                 </div>
-                <div id="question" class="content" hidden=true>
+                <div id="question" hidden=true>
                     <p id="qsttext" style="text-align: left;"></p>
                     <textarea id="subtxt" class="text_entry" style="resize: none; height: 200px;"></textarea>
                     <br><br>
@@ -193,7 +194,7 @@
                     <br><br>
                     <button onclick="resetSelection()" class="button">Back to Menu</button>
                 </div>
-                <div id="answer" class="content" hidden=true>
+                <div id="answer" hidden=true>
                     <p id="anstxt"></p>
                     <p id="ingtxt" hidden=true style="text-align: left;"></p>
                     <p id="notetxt" hidden=true style="text-align: left; list-style-position: inside;"></p>
@@ -203,10 +204,8 @@
                     <button onclick="resetSelection()" class="button">Back to Menu</button>
                 </div>
             </div>
-            <p>
-                <span class="copyright">Copyright Ben Correll 2023</span>
-                <span class="version">Version 0.1</span>
-            </p>
+            <span class="copyright">Copyright Ben Correll 2023</span>
+            <span class="version">Version 0.1</span>
         </div>
     </body>
 </html>
