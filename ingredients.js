@@ -45,9 +45,9 @@ const rockefeller_ingredients = ["chesapeake oysters", "creamed spinach", "cherr
 const charbroiled_ingredients = ["chesapeake oysters", "cajun butter", "parmesan cheese", "grilled bread", "lemon fork", "watercress", "chopped parsley"];
 const spinDip_ingredients = ["onions", "garlic", "killion's beer", "cream cheese", "artichoke hearts", "spinach", "heavy cream", "pepper jack cheese", "parmesan cheese", "tabasco sauce", "crushed red pepper", "chopped parsley", "crispy pita chips"];
 const crabCake_ingredients = ["eggs", "pancake mix", "mayonnaise", "dijon mustard", "chopped parsley", "old bay seasoning", "tabasco sauce", "worcestershire sauce", "small jumbo lump crab", "yellow corn", "red onion", "red pepper", "parsley", "basil", "cajun remoulade"];
-const carpaccio_ingredients = ["beef tenderloin", "extra virgin olive oil", ""];
-const charcuterie_ingredients = [];
-const cheesePlate_ingredients = [];
+const carpaccio_ingredients = ["beef tenderloin", "extra virgin olive oil", "balsamic glaze", "salt", "pepper", "capers", "diced red onion", "shaved parmesan cheese", "potato chips", "watercress"];
+const charcuterie_ingredients = ["hot soppressata", "coppa secca", "dry chorizo", "wheel cut manchego", "pie cut parmesan", "pie cut gargonzola", "triangle gruyere"];
+const cheesePlate_ingredients = ["wheel cut manchego", "pie cut parmesan", "pie cut gargonzola", "triangle gruyere"];
 const hotApps_ingredients = [];
 const chilledApps_ingredients = [];
 
