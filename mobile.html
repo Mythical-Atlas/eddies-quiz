@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Eddie's Quiz</title>
+        <script type="text/javascript" src="ingredients.js"></script>
+        <script type="text/javascript" src="grading.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="mobile.css" />
+    </head>
+    <body>
+        <div class="center_block">
+            <h1 class="header">Eddie's Quiz</h1>
+            <p class="subheader"><i>A menu study tool created by Ben Correll</i></p>
+            <div class="header_separator">
+                <a href="mobile.html">Dish Ingredients</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html" style="float:right">Desktop Website</a>
+            </div>
+            <div class="center_center_block">
+                <div id="selection" class="content">
+                    <p>Select a menu item to be quizzed on.</p>
+                    <label for="appselect">Appetizers:</label>
+                    <select name="appselect" id="appselect" class="drop_down">
+                        <option></option>
+                        <option>Filet Mignon Potstickers</option>
+                        <option>Sweet and Spicy Shrimp</option>
+                        <option>Calamari</option>
+                        <option>Ahi Tuna Poke</option>
+                        <option>Barbecue Shrimp</option>
+                        <option>Eddie's Shrimp Cocktail</option>
+                        <option>Oysters on the Half Shell</option>
+                        <option>Oysters Rockefeller</option>
+                        <option>Charbroiled Oysters</option>
+                        <option>Spinach and Artichoke Dip</option>
+                        <option>Maryland Crab Cake</option>
+                        <option>Beef Carpaccio</option>
+                        <option>Charcuterie and Cheese Plate</option>
+                        <option>Cheese Plate</option>
+                        <option>Hot Appetizer Platter</option>
+                        <option>Chilled Appetizer Platter</option>
+                    </select>
+                    <button onclick="selectApp()" class="button">Select</button>
+                    <br>
+                    <label for="soupsaladselect">Soups, Salads, and Bread:</label>
+                    <select name="soupsaladselect" id="soupsaladselect" class="drop_down">
+                        <option></option>
+                        <option>French Onion Soup</option>
+                        <option>King Crab and Corn Bisque</option>
+                        <option>Caesar Salad</option>
+                        <option>Eddie's House Salad</option>
+                        <option>Classic Wedge Salad</option>
+                        <option>Chopped Salad</option>
+                        <option>Grilled Romaine Salad</option>
+                        <option>Table Bread</option>
+                    </select>
+                    <button onclick="selectSoupSalad()" class="button">Select</button>
+                    <br>
+                    <label for="dressingselect">Salad Dressings:</label>
+                    <select name="dressingselect" id="dressingselect" class="drop_down">
+                        <option></option>
+                        <option>Balsamic Vinaigrette</option>
+                        <option>Ranch Dressing</option>
+                        <option>Maple Apple Cider Vinaigrette</option>
+                        <option>Blue Cheese Dressing</option>
+                        <option>Creamy Herb Dressing</option>
+                        <option>Caesar Dressing</option>
+                        <option>Oil and Vinegar</option>
+                    </select>
+                    <button onclick="selectDressing()" class="button">Select</button>
+                    <br>
+                    <label for="sideselect">Sides:</label>
+                    <select name="sideselect" id="sideselect" class="drop_down">
+                        <option></option>
+                        <option>Baked Potato</option>
+                        <option>Loaded Potato</option>
+                        <option>Roasted Garlic Mashed Potatoes</option>
+                        <option>Roasted Garlic Mashed Potatoes with Lobster</option>
+                        <option>Parmesan Truffle Fries</option>
+                        <option>Macaroni and Cheese</option>
+                        <option>Macaroni and Cheese with Lobster</option>
+                        <option>Eddie's Potatoes</option>
+                        <option>Sweet Potato Cassarole</option>
+                        <option>Broccoli</option>
+                        <option>Asparagus Spears</option>
+                        <option>Tempura Asparagus</option>
+                        <option>Tempura Green Beans</option>
+                        <option>Eddie's Brussels Sprouts with Bacon</option>
+                        <option>Creamed Spinach with Bacon</option>
+                        <option>Wild Mushrooms</option>
+                    </select>
+                    <button onclick="selectSide()" class="button">Select</button>
+                    <br>
+                    <label for="entreeselect">Entrees:</label>
+                    <select name="entreeselect" id="entreeselect" class="drop_down">
+                        <option></option>
+                        <option>Filet Mignon</option>
+                        <option>Prime New York Strip</option>
+                        <option>Prime Ribeye</option>
+                        <option>Bourbon Ribeye</option>
+                        <option>Trio of Filet Mignon Medalions</option>
+                        <option>Filet Del Mar</option>
+                        <option>New Orleans Mixed Grill</option>
+                        <option>Bison Filet Mignon</option>
+                        <option>Bison Bone-in Ribeye</option>
+                        <option>Prime Cheeseburger</option>
+                        <option>Tarpoly Creek Wagyu MS 9+ Filet Mignon</option>
+                        <option>Tarpoly Creek Wagyu MS 7/8+ Ribeye</option>
+                        <option>Cedar Plank Roasted Salmon</option>
+                        <option>Grilled Salmon</option>
+                        <option>Blackened Salmon</option>
+                        <option>Mojo Shrimp and Scallops</option>
+                        <option>Yellowfin Tuna Steak</option>
+                        <option>Sea Bass</option>
+                        <option>Galapagos Island Cold Water Lobster Tail</option>
+                        <option>Red King Crab Legs</option>
+                        <option>Lemon-Dijon Chicken</option>
+                        <option>Vegan/Vegetarian Option</option>
+                    </select>
+                    <button onclick="selectEntree()" class="button">Select</button>
+                    <br>
+                    <label for="enhanceselect">Enhancements:</label>
+                    <select name="enhanceselect" id="enhanceselect" class="drop_down">
+                        <option></option>
+                        <option>Hollandaise Sauce</option>
+                        <option>Bearnaise Sauce</option>
+                        <option>Peppercorn Sauce</option>
+                        <option>Creamy Horseradish Sauce</option>
+                        <option>Bacon Gargonzola Cheese</option>
+                        <option>Maxwell Style</option>
+                        <option>Oscar Style</option>
+                        <option>Bacon Wrapped Shrimp</option>
+                        <option>Crab and Shrimp Del Mar</option>
+                        <option>Mixed Grill</option>
+                        <option>Maryland Crab Cake</option>
+                        <option>Red King Crab Legs</option>
+                        <option>Cold Water Lobster Tail</option>
+                    </select>
+                    <button onclick="selectEnhance()" class="button">Select</button>
+                    <br>
+                    <label for="dessertselect">Desserts:</label>
+                    <select name="dessertselect" id="dessertselect" class="drop_down">
+                        <option></option>
+                        <option>Bananas Foster</option>
+                        <option>Vanilla Cognac Brownie</option>
+                        <option>Carrot Cake</option>
+                        <option>Triple Chocolate Cake</option>
+                        <option>Creme Brulee</option>
+                        <option>Peanut Butter Cup</option>
+                        <option>Fresh Fruit Sorbet</option>
+                        <option>Premium Ice Cream</option>
+                    </select>
+                    <button onclick="selectDessert()" class="button">Select</button>
+                    <br>
+                    <label for="kidsselect">Children's Meals:</label>
+                    <select name="kidsselect" id="kidsselect" class="drop_down">
+                        <option></option>
+                        <option>Kid's Chicken Fingers</option>
+                        <option>Kid's Macaroni and Cheese</option>
+                    </select>
+                    <button onclick="selectKidsMeal()" class="button">Select</button>
+                    
+                </div>
+                <div id="question" class="content" hidden=true>
+                    <p id="qsttext"></p>
+                    <br>
+                    <input id="subtxt" placeholder="Ingredients" class="text_entry">
+                    <br><br>
+                    <div class="centered">
+                        <button onclick="submitAnswer()" id="subbtn" class="button">Submit</button>
+                    </div>
+                </div>
+                <div id="answer" class="content" hidden=true>
+                    <p id="anstxt"></p>
+                    <p id="ingtxt" hidden=true></p>
+                    <p id="notetxt" hidden=true></p>
+                    <p id="note2txt" hidden=true></p>
+                    <div class="centered">
+                        <button onclick="resetSelection()" id="subbtn" class="button">Back to Menu</button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <span class="copyright">Copyright Ben Correll 2023</span>
+                <span class="version">Version 0.1</span>
+            </p>
+        </div>
+    </body>
+</html>
