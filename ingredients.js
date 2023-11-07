@@ -52,21 +52,21 @@ const hotApps_ingredients = ["barbeque shrimp", "maryland crab cakes", "filet mi
 const chilledApps_ingredients = ["cocktail shrimp", "oysters on the half shell", "sesame crusted yellowfin ahi tuna"];
 
 const frenchOnion_ingredients = ["croutons", "gruyere cheese", "grated parmesan cheese", "chopped parsley", "red onions", "yellow onions", "leeks", "green onions", "beef stock", "roasted garlic puree", "madeira wine", "thyme", "brandy"];
-const crabBisque_ingredients = ["minors crab base"];
-const caesarSalad_ingredients = [];
-const house_ingredients = [];
-const wedge_ingredients = [];
+const crabBisque_ingredients = ["minors crab base", "white wine", "yellow corn", "heavy cream", "half and half", "corn starch", "tabasco", "lemon juice", "salt", "white pepper", "roasted corn", "king crab knuckle meat", "parsley"];
+const caesarSalad_ingredients = ["chopped romaine lettuce", "parmesan cheese", "croutons", "caesar dressing"];
+const house_ingredients = ["iceberg lettuce", "romaine lettuce", "red cabbage", "grape tomatoes", "cucumber slices", "croutons", "red onion rings"];
+const wedge_ingredients = ["iceberg lettuce", "diced cherrywood smoked bacon lardons", "blue cheese crumbles", "tomato wedges", "blue cheese dressing"];
 const chopped_ingredients = ["iceberg lettuce", "romaine lettuce", "red cabbage", "creamy herb dressing", "grape tomato halves", "celery", "gruyere cheese", "artichoke hearts", "diced red onion", "prosciutto", "toasted almonds"];
 const grilledRomaine_ingredients = ["romaine lettuce", "ranch dressing", "gargonzola cheese crumbles", "grape tomatoes", "diced cherrywood smoked bacon lardons", "crispy leeks"];
-const bread_ingredients = [];
+const bread_ingredients = ["grated parmesan cheese", "paprika", "granulated garlic", "kosher salt", "herbs de provence"];
 
-const balsamicVin_ingredients = [];
-const ranch_ingredients = [];
-const mapleAppleVin_ingredients = [];
-const blueCheeseDress_ingredients = [];
-const creamyHerb_ingredients = [];
-const caesarDress_ingredients = [];
-const oilAndVinegar_ingredients = [];
+const balsamicVin_ingredients = ["balsamic vinegar", "salad oil", "shallots", "garlic", "bay leaves", "thyme", "herbs de provence", "crushed red pepper", "dijon mustard", "honey", "pepper", "salt"];
+const ranch_ingredients = ["mayonnaise", "buttermilk", "lemon juice", "wocestershire sauce", "tabasco", "roasted garlic puree", "cracked black peppercorns", "ranch seasoning mix"];
+const mapleAppleVin_ingredients = ["maple syrup", "apple cider vinegar", "dijon mustard", "salt", "pepper", "shallots", "extra virgin olive oil"];
+const blueCheeseDress_ingredients = ["gargonzola cheese chunks", "buttermilk", "mayonnaise", "sour cream", "red wine vinegar", "worcestershire sauce", "tabasco", "mustard", "salt", "cayenne pepper", "pepper"];
+const creamyHerb_ingredients = ["liquid egg yolk", "dijon mustard", "rice wine vinegar", "honey", "dry mustard", "salt", "pepper", "basil", "chives", "parsley", "salad oil"];
+const caesarDress_ingredients = ["liquid egg yolk", "anchovies", "red wine vinegar", "white vinegar", "lemon juice", "roasted garlic puree", "mustard", "black pepper", "salt", "grated parmesan cheese", "tabasco", "salad oil", "olive oil", "worcestershire sauce"];
+const oilAndVinegar_ingredients = ["balsamic vinegar", "extra virgin olive oil"];
 
 const bakedPotato_ingredients = [];
 const loadedPotato_ingredients = [];

@@ -9,6 +9,7 @@ ideas:
 - backwards mode (ask what dishes get a certain ingredient)
 - allergens quiz
 - alcohol
+- top scores
 */
 
 let currentDish;
