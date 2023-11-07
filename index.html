@@ -6,16 +6,15 @@
         <script type="text/javascript" src="ingredients.js"></script>
         <script type="text/javascript" src="grading.js"></script>
         <script type="text/javascript" src="main.js"></script>
-        <link rel="stylesheet" href="mobile.css" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div class="center_block">
             <h1 class="header">Eddie's Quiz</h1>
             <p class="subheader"><i>An unofficial menu study tool created by Ben Correll</i></p>
             <div class="navigation">
-                <a href="mobile.html">Dish Ingredients</a>
+                <a href="index.html">Dish Ingredients</a>
                 <a href="contact.html" style="float:right">Contact</a>
-                <!--<a href="index.html" style="float:right">Desktop Website</a>-->
             </div>
             <div class="content">
                 <div id="selection">
@@ -61,7 +60,9 @@
                         <button onclick="selectApp()" class="button">Select</button>
                     </div>
                     <div id="soupSaladSelection" hidden=true>
+                        <br>
                         <label for="soupsaladselect">Soups, Salads, and Bread:</label>
+                        <br>
                         <select name="soupsaladselect" id="soupsaladselect" class="drop_down">
                             <option></option>
                             <option>French Onion Soup</option>
@@ -73,10 +74,13 @@
                             <option>Grilled Romaine Salad</option>
                             <option>Table Bread</option>
                         </select>
+                        <br><br>
                         <button onclick="selectSoupSalad()" class="button">Select</button>
                     </div>
                     <div id="dressingSelection" hidden=true>
+                        <br>
                         <label for="dressingselect">Salad Dressings:</label>
+                        <br>
                         <select name="dressingselect" id="dressingselect" class="drop_down">
                             <option></option>
                             <option>Balsamic Vinaigrette</option>
@@ -87,10 +91,13 @@
                             <option>Caesar Dressing</option>
                             <option>Oil and Vinegar</option>
                         </select>
+                        <br><br>
                         <button onclick="selectDressing()" class="button">Select</button>
                     </div>
                     <div id="sideSelection" hidden=true>
+                        <br>
                         <label for="sideselect">Sides:</label>
+                        <br>
                         <select name="sideselect" id="sideselect" class="drop_down">
                             <option></option>
                             <option>Baked Potato</option>
@@ -110,10 +117,13 @@
                             <option>Creamed Spinach with Bacon</option>
                             <option>Wild Mushrooms</option>
                         </select>
+                        <br><br>
                         <button onclick="selectSide()" class="button">Select</button>
                     </div>
                     <div id="entreeSelection" hidden=true>
+                        <br>
                         <label for="entreeselect">Entrees:</label>
+                        <br>
                         <select name="entreeselect" id="entreeselect" class="drop_down">
                             <option></option>
                             <option>Filet Mignon</option>
@@ -139,10 +149,13 @@
                             <option>Lemon-Dijon Chicken</option>
                             <option>Vegan/Vegetarian Option</option>
                         </select>
+                        <br><br>
                         <button onclick="selectEntree()" class="button">Select</button>
                     </div>
                     <div id="enhanceSelection" hidden=true>
+                        <br>
                         <label for="enhanceselect">Enhancements:</label>
+                        <br>
                         <select name="enhanceselect" id="enhanceselect" class="drop_down">
                             <option></option>
                             <option>Hollandaise Sauce</option>
@@ -159,10 +172,13 @@
                             <option>Red King Crab Legs</option>
                             <option>Cold Water Lobster Tail</option>
                         </select>
+                        <br><br>
                         <button onclick="selectEnhance()" class="button">Select</button>
                     </div>
                     <div id="dessertSelection" hidden=true>
+                        <br>
                         <label for="dessertselect">Desserts:</label>
+                        <br>
                         <select name="dessertselect" id="dessertselect" class="drop_down">
                             <option></option>
                             <option>Bananas Foster</option>
@@ -174,15 +190,19 @@
                             <option>Fresh Fruit Sorbet</option>
                             <option>Premium Ice Cream</option>
                         </select>
+                        <br><br>
                         <button onclick="selectDessert()" class="button">Select</button>
                     </div>
                     <div id="kidsSelection" hidden=true>
+                        <br>
                         <label for="kidsselect">Children's Meals:</label>
+                        <br>
                         <select name="kidsselect" id="kidsselect" class="drop_down">
                             <option></option>
                             <option>Kid's Chicken Fingers</option>
                             <option>Kid's Macaroni and Cheese</option>
                         </select>
+                        <br><br>
                         <button onclick="selectKidsMeal()" class="button">Select</button>
                     </div>
                 </div>

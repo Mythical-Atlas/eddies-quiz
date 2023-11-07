@@ -47,12 +47,12 @@ const spinDip_ingredients = ["onions", "garlic", "killion's beer", "cream cheese
 const crabCake_ingredients = ["eggs", "pancake mix", "mayonnaise", "dijon mustard", "chopped parsley", "old bay seasoning", "tabasco sauce", "worcestershire sauce", "small jumbo lump crab", "yellow corn", "red onion", "red pepper", "parsley", "basil", "cajun remoulade"];
 const carpaccio_ingredients = ["beef tenderloin", "extra virgin olive oil", "balsamic glaze", "salt", "pepper", "capers", "diced red onion", "shaved parmesan cheese", "potato chips", "watercress"];
 const charcuterie_ingredients = ["hot soppressata", "coppa secca", "dry chorizo", "wheel cut manchego", "pie cut parmesan", "pie cut gargonzola", "triangle gruyere"];
-const cheesePlate_ingredients = ["wheel cut manchego", "pie cut parmesan", "pie cut gargonzola", "triangle gruyere"];
-const hotApps_ingredients = [];
-const chilledApps_ingredients = [];
+const cheesePlate_ingredients = ["wheel cut manchego cheese", "pie cut parmesan cheese", "pie cut gargonzola cheese", "triangle gruyere cheese"];
+const hotApps_ingredients = ["barbeque shrimp", "maryland crab cakes", "filet mignon pot stickers"];
+const chilledApps_ingredients = ["cocktail shrimp", "oysters on the half shell", "sesame crusted yellowfin ahi tuna"];
 
-const frenchOnion_ingredients = [];
-const crabBisque_ingredients = [];
+const frenchOnion_ingredients = ["croutons", "gruyere cheese", "grated parmesan cheese", "chopped parsley", "red onions", "yellow onions", "leeks", "green onions", "beef stock", "roasted garlic puree", "madeira wine", "thyme", "brandy"];
+const crabBisque_ingredients = ["minors crab base"];
 const caesarSalad_ingredients = [];
 const house_ingredients = [];
 const wedge_ingredients = [];

@@ -467,8 +467,6 @@ function selectItem() {
     document.getElementById('selection').hidden = true;
     document.getElementById('answer').hidden = true;
     document.getElementById('question').hidden = false;
-
-    document.getElementById("subtxt").focus();
 }
 
 function submitAnswer() {
@@ -585,7 +583,10 @@ function submitAnswer() {
     document.getElementById('answer').hidden = false
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {resetSelection()});
+document.addEventListener("DOMContentLoaded", function(event) {
+    resetSelection();
+    loadSheet();
+});
 
 window.addEventListener('keydown', function(event) {
     if(event.key === 'Enter') {
