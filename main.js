@@ -5,6 +5,7 @@ ideas:
 - picture mode (given picture, asks for ingredients and/or name)
 - quiz mode (run through one or more sections, shuffled optionally, and ask for ingredients on all items - give stats at end)
 - sizes quiz (what sizes does each dish come in)
+- amounts quiz (how many shrimp? etc.)
 - sauces/condiments
 - backwards mode (ask what dishes get a certain ingredient)
 - allergens quiz

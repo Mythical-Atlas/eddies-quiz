@@ -38,6 +38,16 @@ body {
     background-color: #d49696;
     color: black;
 }
+.navigation span {
+    float: left;
+    display: block;
+    font-size: 2vh;
+    background-color: #d49696;
+    color: black;
+    text-align: center;
+    padding: 1vh;
+    text-decoration: none;
+}
 
 .content {
     padding-top: 2vh;
