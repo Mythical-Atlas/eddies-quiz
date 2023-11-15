@@ -2,114 +2,116 @@
 This file was automatically generated from a Microsoft Excel spreadsheet. Do not directly modify this file.
 */
 
-const potstick_ingredients = ["beef tips", "garlic", "sesame oil", "onions", "ginger", "chili paste", "soy sauce", "cilantro", "scallions", "asian ginger chili sauce", "micro cilantro"];
-const ssShrimp_ingredients = ["70/90 count shrimp", "tempura batter", "sweet and spicy chili sauce", "sriracha"];
-const calamari_ingredients = ["buttermilk", "blackened seasoning", "calamari rings", "tempura batter", "sliced peppadew peppers", "creamy wasabi sauce", "sweet and spicy chili sauce", "lemon vinaigrette"];
-const poke_ingredients = ["asian ginger chili sauce", "diced yellowfin tuna", "creamy wasabi sauce", "diced avacado", "sweet soy sauce", "micro cilantro", "sesame wontons"];
-const bbqShrimp_ingredients = ["8/10 count shrimp", "horseradish", "cherrywood smoked bacon", "southern comfort barbecue sauce", "chopped parsley"];
-const shrimpCocktail_ingredients = ["jumbo shrimp", "spicy horseradish cocktail sauce", "watercress", "lemon fork"];
-const halfShell_ingredients = ["chesapeake oysters", "apple champagne mignonette", "spicy horseradish cocktail sauce", "lemon forks", "mini tabasco bottles", "saltine crackers", "crushed ice"];
-const rockefeller_ingredients = ["chesapeake oysters", "creamed spinach", "cherrywood smoked bacon", "steak butter", "parmesan cheese", "lemon fork", "watercress", "chopped parsley"];
-const charbroiled_ingredients = ["chesapeake oysters", "cajun butter", "parmesan cheese", "grilled bread", "lemon fork", "watercress", "chopped parsley"];
-const spinDip_ingredients = ["onions", "garlic", "killion's beer", "cream cheese", "artichoke hearts", "spinach", "heavy cream", "pepper jack cheese", "parmesan cheese", "tabasco sauce", "crushed red pepper", "chopped parsley", "crispy pita chips"];
-const crabCake_ingredients = ["crab cakes", "corn relush", "cajun remoulade", "chopped parsley"];
-const carpaccio_ingredients = ["beef tenderloin", "extra virgin olive oil", "balsamic glaze", "salt", "pepper", "capers", "diced red onions", "shaved parmesan cheese", "potato chips", "watercress"];
-const charcuterie_ingredients = ["hot soppressata", "coppa secca", "dry chorizo", "wheel cut manchego*", "pie cut parmesan*", "pie cut gargonzola*", "triangle gruyere*"];
-const cheesePlate_ingredients = ["wheel cut manchego cheese", "pie cut parmesan cheese", "pie cut gargonzola cheese", "triangle gruyere cheese"];
-const hotApps_ingredients = ["barbecue shrimp", "maryland crab cakes", "filet mignon pot stickers"];
-const chilledApps_ingredients = ["cocktail shrimp", "oysters on the half shell", "sesame crusted yellowfin ahi tuna"];
-const frenchOnion_ingredients = ["croutons", "gruyere cheese", "grated parmesan cheese", "chopped parsley", "red onions", "yellow onions", "leeks", "green onions", "beef stock", "roasted garlic puree", "madeira wine", "thyme", "brandy"];
-const crabBisque_ingredients = ["king crab corn bisque", "roasted corn", "king crab knuckle meat", "chopped parsley"];
-const caesarSalad_ingredients = ["chopped romaine lettuce", "parmesan cheese", "croutons", "caesar dressing"];
-const house_ingredients = ["iceberg lettuce", "romaine lettuce", "red cabbage", "grape tomatoes", "cucumber slices", "croutons", "red onion rings", "choice of dressing"];
-const wedge_ingredients = ["iceberg lettuce", "diced cherrywood smoked bacon", "blue cheese crumbles", "tomato wedges", "blue cheese dressing"];
-const chopped_ingredients = ["iceberg lettuce", "romaine lettuce", "red cabbage", "creamy herb dressing", "grape tomato halves", "celery", "gruyere cheese", "artichoke hearts", "diced red onion", "prosciutto", "toasted almonds"];
-const grilledRomaine_ingredients = ["romaine lettuce", "ranch dressing", "gargonzola cheese crumbles", "grape tomatoes", "diced cherrywood smoked bacon", "crispy leeks"];
-const bread_ingredients = ["grated parmesan cheese", "paprika", "granulated garlic", "kosher salt", "herbs de provence"];
-const balsamicVin_ingredients = ["balsamic vinegar", "salad oil", "shallots", "garlic", "bay leaves", "thyme", "herbs de provence", "crushed red pepper", "dijon mustard", "honey", "pepper", "salt"];
-const ranch_ingredients = ["mayonnaise", "buttermilk", "lemon juice", "wocestershire sauce", "tabasco", "roasted garlic puree", "cracked black peppercorns", "ranch seasoning mix"];
-const mapleAppleVin_ingredients = ["maple syrup", "apple cider vinegar", "dijon mustard", "salt", "pepper", "shallots", "extra virgin olive oil"];
-const blueCheeseDress_ingredients = ["gargonzola cheese chunks", "buttermilk", "mayonnaise", "sour cream", "red wine vinegar", "worcestershire sauce", "tabasco", "mustard", "salt", "cayenne pepper", "pepper"];
-const creamyHerb_ingredients = ["liquid egg yolk", "dijon mustard", "rice wine vinegar", "honey", "dry mustard", "salt", "pepper", "basil", "chives", "chopped parsley", "salad oil"];
-const caesarDress_ingredients = ["liquid egg yolk", "anchovies", "red wine vinegar", "white vinegar", "lemon juice", "roasted garlic puree", "mustard", "black pepper", "salt", "grated parmesan cheese", "tabasco", "salad oil", "olive oil", "worcestershire sauce"];
-const oilAndVinegar_ingredients = ["balsamic vinegar", "extra virgin olive oil"];
-const bakedPotato_ingredients = ["salt", "potato", "clarified butter", "chopped parsley", "butter", "sour cream"];
-const loadedPotato_ingredients = ["salt", "potato", "clarified butter", "chopped parsley", "butter", "sour cream", "chives", "cheese", "diced cherrywood smoked bacon"];
-const mashedPotatoes_ingredients = ["potatoes", "butter", "half and half", "roasted garlic", "chopped parsley"];
-const lobsterMashed_ingredients = ["potatoes", "butter", "half and half", "roasted garlic", "sauteed lobster meat", "lobster butter", "chives"];
-const parmesanFries_ingredients = ["french fried potatoes", "truffle oil", "salt", "pepper", "grated parmesan cheese", "chopped parsley"];
-const macaroni_ingredients = ["mascarpone cheese", "cream cheese", "pepperjack cheese", "gruyere cheese", "cheddar cheese", "half and half", "white pepper", "mustard powder", "chicken base", "gratinee", "chopped parsley"];
-const lobsterMac_ingredients = ["mascarpone cheese", "cream cheese", "pepperjack cheese", "gruyere cheese", "cheddar cheese", "half and half", "white pepper", "mustard powder", "chicken base", "gratinee", "chopped parsley", "sauteed lobster meat", "lobster butter"];
-const eddiesPotatoes_ingredients = ["diced potatoes", "rich cream sauce", "gruyere cheese", "parmesan cheese", "heavy cream", "jalepeno peppers", "cheddar cheese", "chopped parsley"];
-const sweetPotato_ingredients = ["sweet potatoes", "brown sugar", "salt", "pepper", "maple syrup", "butter", "pecans"];
-const broccoli_ingredients = ["steamed broccoli florets", "clarified butter", "salt", "pepper"];
-const asparagus_ingredients = ["steamed asparagus", "clarified butter", "salt", "pepper"];
-const tempuraAsp_ingredients = ["sesame tempura batter", "asparagus", "salt", "pepper", "creamy wasabi sauce"];
-const tempuraBeans_ingredients = ["sesame tempura batter", "green beans", "salt", "pepper", "creamy wasabi sauce"];
-const eddiesBrussels_ingredients = ["brussels sprouts", "caramelized onions", "cherrywood smoked bacon", "clarified butter", "steak butter", "grated parmesan cheese"];
-const creamedSpinach_ingredients = ["spinach", "cherrywood smoked bacon", "yellow onions", "granulated garlic", "nutmeg", "cayenne pepper", "cream sauce", "gruyere cheese"];
-const wildMush_ingredients = ["shiitake mushrooms", "oyster mushrooms", "cremini mushrooms", "oil", "mushroom stock", "steak butter", "chives"];
-const filetMignon_ingredients = ["filet mignon", "steak butter", "chopped parsley", "watercress"];
-const nyStrip_ingredients = ["prime new york strip", "steak butter", "chopped parsley", "watercress"];
-const ribeye_ingredients = ["prime ribeye", "steak butter", "chopped parsley", "watercress"];
-const bourbonRib_ingredients = ["prime ribeye", "bourbon", "brown sugar", "spices", "garlic", "fried seasoned onion straws", "watercress"];
-const trio_ingredients = ["filet mignon medallions", "peppercorn sauce", "bacon gargonzola cheese crust", "oscar topping", "chopped parsley"];
-const delMar_ingredients = ["filet mignon medallion", "fingerling potatoes", "sauteed shrimp", "garlic infused crab", "dijonaise"];
-const newOrleans_ingredients = ["shrimp", "andouille sausage", "blackening spice", "filet medallion", "steak butter", "andouille sausage gravy", "roasted garlic mashed potatoes", "watercress", "chopped parsley"];
-const bisonFiletMignon_ingredients = ["bison filet mignon", "steak butter", "chopped parsley", "watercress"];
-const bisonBoneIn_ingredients = ["bone-in bison ribeye", "steak butter", "chopped parsley", "watercress"];
-const cheeseburger_ingredients = ["prime beef patty", "toasted bun", "cheddar cheese*", "gruyere cheese*", "gargonzola cheese*", "pepperjack cheese", "iceberg lettuce", "tomato slice", "red onions", "pickle spear", "chips*", "french fries*"];
-const tarpolyFiletMignon_ingredients = ["ms 9+ filet mignon", "steak butter", "watercress", "chopped parsley"];
-const tarpolyRibeye_ingredients = ["ms 7/8+ wagyu ribeye", "steak butter", "watercress", "chopped parsley"];
-const cedarSalmon_ingredients = ["60 south salmon", "charred cedar plank", "steak butter", "roasted fingerling potatoes", "sauteed green beans"];
-const grilledSalmon_ingredients = ["60 south salmon", "steak butter", "roasted fingerling potatoes", "sauteed green beans"];
-const blackenedSalmon_ingredients = ["60 south salmon", "blackening seasoning", "cajun butter", "roasted fingerling potatoes", "sauteed green beans"];
-const shimpScallops_ingredients = ["8/12 count shrimp", "u-15 scallops", "corn", "poblano peppers", "rice", "mojo sauce", "shaved manchego cheese", "micro cilantro"];
-const tunaSteak_ingredients = ["black and white sesame seed crust", "tuna steak", "furikake rice", "ahi vegetables", "ginger mirin", "scallion puree", "frizzled scallions"];
-const seaBass_ingredients = ["sea bass", "maple apple cider vinaigrette", "julienned carrots", "julienned zuccini", "julienned yellow squash", "balsamic reduction", "chives"];
-const lobsterTail_ingredients = ["galapagos island cold water red lobster tail", "white wine", "butter", "paprika", "chopped parsley", "lemon fork", "butter tower"];
-const crabLegs_ingredients = ["red king crab legs", "butter tower", "lemon fork"];
-const lemonChicken_ingredients = ["airline chicken breasts", "rosemary", "oregano", "lemon juice", "chicken broth", "roasted garlic mashed potatoes", "grilled asparagus spears", "lemon-dijon mustard pan sauce", "grilled lemon"];
-const vegetarian_ingredients = ["zucchini", "yellow squash", "red pepper", "canola oil", "salt", "pepper", "furikake rice", "ahi vegetables", "sesame oil", "black sesame seeds", "white sesame seeds", "sweet soy sauce", "frizzled scallions"];
-const hollandaise_ingredients = ["butter", "egg yolks", "lemon juice", "worcestershire sauce", "tabasco", "salt", "white pepper"];
-const bearnaise_ingredients = ["hollandaise", "tarragon", "white wine", "red wine vinegar", "garlic", "shallots", "thyme"];
-const peppercorn_ingredients = ["cracked black peppercorns", "brandy", "veal sauce", "heavy cream"];
-const horseradish_ingredients = ["sour cream", "worcestershire sauce", "tabasco sauce", "horseradish", "lemon juice", "heavy cream", "chopped parsley", "salt", "pepper"];
-const gargonzola_ingredients = ["gorgonzola cheese", "diced cherrywood smoked bacon", "blue cheese dressing", "panko bread crumbs", "pepper", "chopped parsley"];
-const maxwell_ingredients = ["lobster meat", "asparagus spears", "bearnaise sauce"];
-const oscar_ingredients = ["small jumbo lump crabmeat", "asparagus spears", "bearnaise sauce"];
-const baconShrimp_ingredients = ["8/10 count shrimp", "horseradish", "cherrywood smoked bacon", "southern comfort barbecue sauce", "chopped parsley"];
-const crabShrimpDelMar_ingredients = ["16/20 count shrimp", "del mar crab", "whole grained mustard dijonnaise", "micro cilantro"];
-const mixedGrill_ingredients = ["16/20 shrimp", "andouille sausage", "andouille sausage gravy"];
-const crabCakeEnhance_ingredients = ["crab cake", "corn relish", "cajun remoulade", "micro cilantro"];
-const crabLegsEnhance_ingredients = ["red king crab legs", "butter tower", "lemon fork"];
-const lobsterTailEnhance_ingredients = ["galapagos island cold water red lobster tail", "white wine", "butter", "paprika", "chopped parsley", "lemon fork", "butter tower"];
-const bananas_ingredients = ["butter", "brown sugar", "sliced bananas", "banana liqueur", "dark rum", "cinnamon", "vanilla bean ice cream"];
-const brownie_ingredients = ["vanilla bean ice cream", "chocolate fudge brownie", "vanilla cognac", "vanilla bean creme anglaise", "hot fudge", "spiced pecans", "raspberries"];
-const carrotCake_ingredients = ["eggs", "cinnamon", "allspice", "cloves", "carrots", "golden raisins", "pineapple", "walnuts", "cream cheese frosting", "caramel sauce", "powdered sugar", "mint sprig"];
-const chocolateCake_ingredients = ["chocolate cake", "chocolate fudge icing", "chocolate sauce", "mini chocolate chips"];
-const cremeBrulee_ingredients = ["custard", "vanilla beans", "caramelized sugar crust", "raspberries", "mint"];
-const pbCup_ingredients = ["peanut butter and graham cracker crust", "peanut butter cream filling", "chocolate ganache", "peanut tuile", "caramel sauce", "chocolate sauce", "whipped cream", "mint"];
-const sorbet_ingredients = ["seasonally flavored sorbet", "mint sprig"];
-const iceCream_ingredients = ["choice of flavored ice cream", "mint sprig", "chocolate sauce", "hot fudge", "caramel sauce"];
-const kidsChicken_ingredients = ["chicken fingers", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"];
-const kidsMac_ingredients = ["macaroni and cheese", "chicken*", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"];
-const kidsSalmon_ingredients = ["grilled salmon filet", "lemon wedge", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"];
-const kidsFilet_ingredients = ["tenderloin medallion", "steak butter", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"];
-const kidsBurger_ingredients = ["prime hamburger", "steak butter", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"];
-const sweetSpicy_ingredients = ["sweet chile sauce", "mayonnaise", "hot mustard sauce"];
-const crabMix_ingredients = ["eggs", "pancake mix", "mayonnaise", "dijon mustard", "chopped parsley", "old bay seasoning", "tabasco sauce", "worcestershire sauce", "small jumbo lump crabmeat"];
-const cornRelish_ingredients = ["yellow corn", "red onions", "red pepper", "chopped parsley", "basil"];
-const remoulade_ingredients = ["mayonnaise", "garlic", "shallots", "chopped parsley", "lemon juice", "worcestershire sauce", "eggs", "capers", "dijon mustard", "cayenne pepper", "sriracha sauce"];
-const bisque_ingredients = ["minors crab base", "white wine", "yellow corn", "heavy cream", "half and half", "corn starch", "tabasco", "lemon juice", "salt", "white pepper"];
-const delMarCrab_ingredients = ["clarified butter", "garlic", "heavy cream", "special crab meat", "chives"];
-const dijonnaise_ingredients = ["hollandaise", "whole grained mustard dijonnaise", "chives"];
-const andouilleGravy_ingredients = ["canola oil", "andouille sausage", "onions", "celery", "green peppers", "flour", "bay leaves", "mustard", "salt", "white pepper", "cayenne pepper", "basil", "thyme", "kitchen bouquet", "garlic", "beef stock"];
-const blackenedSeasoning_ingredients = ["paprika", "dry basil", "dry oregano", "garlic", "onion powder", "cayenne pepper", "black pepper", "salt", "sugar", "dry thyme"];
-const asianGinger_ingredients = ["lime juice", "soy sauce", "sweet chili sauce", "chili paste", "sweet soy sauce", "wasabi powder", "pickled ginger", "cilantro", "mint"];
-const cornPoblano_ingredients = ["clarified butter", "green chiles", "chili powder", "garlic", "oregano", "cilantro", "cumin", "salt", "long grain rice", "chicken stock", "corn", "poblano peppers", "butter"];
-const mojoSauce_ingredients = ["oil", "garlic", "orange zest", "orange juice", "lime juice", "cilantro", "mint", "oregano", "cumin", "brown sugar", "salt", "pepper"];
-const furikake_ingredients = ["nori", "sesame seeds", "orange zest", "lime zest", "lemon zest", "chili flakes"];
-const ahiVegetables_ingredients = ["shiitake mushrooms", "red bell peppers", "green onions", "asparagus"];
-const gingerMirin_ingredients = ["mirin", "soy ginger", "corn starch"];
-const mignonette_ingredients = ["champagne vinegar", "apple cider vinegar", "sparkling wine", "white pepper", "shallots", "kosher salt", "honey", "granny smith apples"];
+const bigIngredientsArray = [
+	["Filet Mignon Potstickers", "beef tips", "garlic", "sesame oil", "onions", "ginger", "chili paste", "soy sauce", "cilantro", "scallions", "asian ginger chili sauce", "micro cilantro"],
+	["Sweet and Spicy Shrimp", "70/90 count shrimp", "tempura batter", "sweet and spicy chili sauce", "sriracha"],
+	["Calamari", "buttermilk", "blackened seasoning", "calamari rings", "tempura batter", "sliced peppadew peppers", "creamy wasabi sauce", "sweet and spicy chili sauce", "lemon vinaigrette"],
+	["Ahi Tuna Poke", "asian ginger chili sauce", "diced yellowfin tuna", "creamy wasabi sauce", "diced avacado", "sweet soy sauce", "micro cilantro", "sesame wontons"],
+	["Barbecue Shrimp", "8/10 count shrimp", "horseradish", "cherrywood smoked bacon", "southern comfort barbecue sauce", "chopped parsley"],
+	["Eddie's Shrimp Cocktail", "jumbo shrimp", "spicy horseradish cocktail sauce", "watercress", "lemon fork"],
+	["Oysters on the Half Shell", "chesapeake oysters", "apple champagne mignonette", "spicy horseradish cocktail sauce", "lemon forks", "mini tabasco bottles", "saltine crackers", "crushed ice"],
+	["Oysters Rockefeller", "chesapeake oysters", "creamed spinach", "cherrywood smoked bacon", "steak butter", "parmesan cheese", "lemon fork", "watercress", "chopped parsley"],
+	["Charbroiled Oysters", "chesapeake oysters", "cajun butter", "parmesan cheese", "grilled bread", "lemon fork", "watercress", "chopped parsley"],
+	["Spinach and Artichoke Dip", "onions", "garlic", "killion's beer", "cream cheese", "artichoke hearts", "spinach", "heavy cream", "pepper jack cheese", "parmesan cheese", "tabasco sauce", "crushed red pepper", "chopped parsley", "crispy pita chips"],
+	["Maryland Crab Cake", "crab cakes", "corn relush", "cajun remoulade", "chopped parsley"],
+	["Beef Carpaccio", "beef tenderloin", "extra virgin olive oil", "balsamic glaze", "salt", "pepper", "capers", "diced red onions", "shaved parmesan cheese", "potato chips", "watercress"],
+	["Charcuterie and Cheese Plate", "hot soppressata", "coppa secca", "dry chorizo", "wheel cut manchego*", "pie cut parmesan*", "pie cut gargonzola*", "triangle gruyere*"],
+	["Cheese Plate", "wheel cut manchego cheese", "pie cut parmesan cheese", "pie cut gargonzola cheese", "triangle gruyere cheese"],
+	["Hot Appetizer Platter", "barbecue shrimp", "maryland crab cakes", "filet mignon pot stickers"],
+	["Chilled Appetizer Platter", "cocktail shrimp", "oysters on the half shell", "sesame crusted yellowfin ahi tuna"],
+	["French Onion Soup", "croutons", "gruyere cheese", "grated parmesan cheese", "chopped parsley", "red onions", "yellow onions", "leeks", "green onions", "beef stock", "roasted garlic puree", "madeira wine", "thyme", "brandy"],
+	["King Crab and Corn Bisque", "king crab corn bisque", "roasted corn", "king crab knuckle meat", "chopped parsley"],
+	["Caesar Salad", "chopped romaine lettuce", "parmesan cheese", "croutons", "caesar dressing"],
+	["Eddie's House Salad", "iceberg lettuce", "romaine lettuce", "red cabbage", "grape tomatoes", "cucumber slices", "croutons", "red onion rings", "choice of dressing"],
+	["Classic Wedge Salad", "iceberg lettuce", "diced cherrywood smoked bacon", "blue cheese crumbles", "tomato wedges", "blue cheese dressing"],
+	["Chopped Salad", "iceberg lettuce", "romaine lettuce", "red cabbage", "creamy herb dressing", "grape tomato halves", "celery", "gruyere cheese", "artichoke hearts", "diced red onion", "prosciutto", "toasted almonds"],
+	["Grilled Romaine Salad", "romaine lettuce", "ranch dressing", "gargonzola cheese crumbles", "grape tomatoes", "diced cherrywood smoked bacon", "crispy leeks"],
+	["Table Bread", "grated parmesan cheese", "paprika", "granulated garlic", "kosher salt", "herbs de provence"],
+	["Balsamic Vinaigrette", "balsamic vinegar", "salad oil", "shallots", "garlic", "bay leaves", "thyme", "herbs de provence", "crushed red pepper", "dijon mustard", "honey", "pepper", "salt"],
+	["Ranch Dressing", "mayonnaise", "buttermilk", "lemon juice", "wocestershire sauce", "tabasco", "roasted garlic puree", "cracked black peppercorns", "ranch seasoning mix"],
+	["Maple Apple Cider Vinaigrette", "maple syrup", "apple cider vinegar", "dijon mustard", "salt", "pepper", "shallots", "extra virgin olive oil"],
+	["Blue Cheese Dressing", "gargonzola cheese chunks", "buttermilk", "mayonnaise", "sour cream", "red wine vinegar", "worcestershire sauce", "tabasco", "mustard", "salt", "cayenne pepper", "pepper"],
+	["Creamy Herb Dressing", "liquid egg yolk", "dijon mustard", "rice wine vinegar", "honey", "dry mustard", "salt", "pepper", "basil", "chives", "chopped parsley", "salad oil"],
+	["Caesar Dressing", "liquid egg yolk", "anchovies", "red wine vinegar", "white vinegar", "lemon juice", "roasted garlic puree", "mustard", "black pepper", "salt", "grated parmesan cheese", "tabasco", "salad oil", "olive oil", "worcestershire sauce"],
+	["Oil and Vinegar", "balsamic vinegar", "extra virgin olive oil"],
+	["Baked Potato", "salt", "potato", "clarified butter", "chopped parsley", "butter", "sour cream"],
+	["Loaded Potato", "salt", "potato", "clarified butter", "chopped parsley", "butter", "sour cream", "chives", "cheese", "diced cherrywood smoked bacon"],
+	["Roasted Garlic Mashed Potatoes", "potatoes", "butter", "half and half", "roasted garlic", "chopped parsley"],
+	["Roasted Garlic Mashed Potatoes with Lobster", "potatoes", "butter", "half and half", "roasted garlic", "sauteed lobster meat", "lobster butter", "chives"],
+	["Parmesan Truffle Fries", "french fried potatoes", "truffle oil", "salt", "pepper", "grated parmesan cheese", "chopped parsley"],
+	["Macaroni and Cheese", "mascarpone cheese", "cream cheese", "pepperjack cheese", "gruyere cheese", "cheddar cheese", "half and half", "white pepper", "mustard powder", "chicken base", "gratinee", "chopped parsley"],
+	["Macaroni and Cheese with Lobster", "mascarpone cheese", "cream cheese", "pepperjack cheese", "gruyere cheese", "cheddar cheese", "half and half", "white pepper", "mustard powder", "chicken base", "gratinee", "chopped parsley", "sauteed lobster meat", "lobster butter"],
+	["Eddie's Potatoes", "diced potatoes", "rich cream sauce", "gruyere cheese", "parmesan cheese", "heavy cream", "jalepeno peppers", "cheddar cheese", "chopped parsley"],
+	["Sweet Potato Cassarole", "sweet potatoes", "brown sugar", "salt", "pepper", "maple syrup", "butter", "pecans"],
+	["Broccoli", "steamed broccoli florets", "clarified butter", "salt", "pepper"],
+	["Asparagus Spears", "steamed asparagus", "clarified butter", "salt", "pepper"],
+	["Tempura Asparagus", "sesame tempura batter", "asparagus", "salt", "pepper", "creamy wasabi sauce"],
+	["Tempura Green Beans", "sesame tempura batter", "green beans", "salt", "pepper", "creamy wasabi sauce"],
+	["Eddie's Brussels Sprouts with Bacon", "brussels sprouts", "caramelized onions", "cherrywood smoked bacon", "clarified butter", "steak butter", "grated parmesan cheese"],
+	["Creamed Spinach with Bacon", "spinach", "cherrywood smoked bacon", "yellow onions", "granulated garlic", "nutmeg", "cayenne pepper", "cream sauce", "gruyere cheese"],
+	["Wild Mushrooms", "shiitake mushrooms", "oyster mushrooms", "cremini mushrooms", "oil", "mushroom stock", "steak butter", "chives"],
+	["Filet Mignon", "filet mignon", "steak butter", "chopped parsley", "watercress"],
+	["Prime New York Strip", "prime new york strip", "steak butter", "chopped parsley", "watercress"],
+	["Prime Ribeye", "prime ribeye", "steak butter", "chopped parsley", "watercress"],
+	["Bourbon Ribeye", "prime ribeye", "bourbon", "brown sugar", "spices", "garlic", "fried seasoned onion straws", "watercress"],
+	["Trio of Filet Mignon Medalions", "filet mignon medallions", "peppercorn sauce", "bacon gargonzola cheese crust", "oscar topping", "chopped parsley"],
+	["Filet Del Mar", "filet mignon medallion", "fingerling potatoes", "sauteed shrimp", "garlic infused crab", "dijonaise"],
+	["New Orleans Mixed Grill", "shrimp", "andouille sausage", "blackening spice", "filet medallion", "steak butter", "andouille sausage gravy", "roasted garlic mashed potatoes", "watercress", "chopped parsley"],
+	["Bison Filet Mignon", "bison filet mignon", "steak butter", "chopped parsley", "watercress"],
+	["Bison Bone-in Ribeye", "bone-in bison ribeye", "steak butter", "chopped parsley", "watercress"],
+	["Prime Cheeseburger", "prime beef patty", "toasted bun", "cheddar cheese*", "gruyere cheese*", "gargonzola cheese*", "pepperjack cheese", "iceberg lettuce", "tomato slice", "red onions", "pickle spear", "chips*", "french fries*"],
+	["Tarpoly Creek Wagyu MS 9+ Filet Mignon", "ms 9+ filet mignon", "steak butter", "watercress", "chopped parsley"],
+	["Tarpoly Creek Wagyu MS 7/8+ Ribeye", "ms 7/8+ wagyu ribeye", "steak butter", "watercress", "chopped parsley"],
+	["Cedar Plank Roasted Salmon", "60 south salmon", "charred cedar plank", "steak butter", "roasted fingerling potatoes", "sauteed green beans"],
+	["Grilled Salmon", "60 south salmon", "steak butter", "roasted fingerling potatoes", "sauteed green beans"],
+	["Blackened Salmon", "60 south salmon", "blackening seasoning", "cajun butter", "roasted fingerling potatoes", "sauteed green beans"],
+	["Mojo Shrimp and Scallops", "8/12 count shrimp", "u-15 scallops", "corn", "poblano peppers", "rice", "mojo sauce", "shaved manchego cheese", "micro cilantro"],
+	["Yellowfin Tuna Steak", "black and white sesame seed crust", "tuna steak", "furikake rice", "ahi vegetables", "ginger mirin", "scallion puree", "frizzled scallions"],
+	["Sea Bass", "sea bass", "maple apple cider vinaigrette", "julienned carrots", "julienned zuccini", "julienned yellow squash", "balsamic reduction", "chives"],
+	["Galapagos Island Cold Water Lobster Tail", "galapagos island cold water red lobster tail", "white wine", "butter", "paprika", "chopped parsley", "lemon fork", "butter tower"],
+	["Red King Crab Legs", "red king crab legs", "butter tower", "lemon fork"],
+	["Lemon-Dijon Chicken", "airline chicken breasts", "rosemary", "oregano", "lemon juice", "chicken broth", "roasted garlic mashed potatoes", "grilled asparagus spears", "lemon-dijon mustard pan sauce", "grilled lemon"],
+	["Vegan/Vegetarian Option", "zucchini", "yellow squash", "red pepper", "canola oil", "salt", "pepper", "furikake rice", "ahi vegetables", "sesame oil", "black sesame seeds", "white sesame seeds", "sweet soy sauce", "frizzled scallions"],
+	["Hollandaise Sauce", "butter", "egg yolks", "lemon juice", "worcestershire sauce", "tabasco", "salt", "white pepper"],
+	["Bearnaise Sauce", "hollandaise", "tarragon", "white wine", "red wine vinegar", "garlic", "shallots", "thyme"],
+	["Peppercorn Sauce", "cracked black peppercorns", "brandy", "veal sauce", "heavy cream"],
+	["Creamy Horseradish Sauce", "sour cream", "worcestershire sauce", "tabasco sauce", "horseradish", "lemon juice", "heavy cream", "chopped parsley", "salt", "pepper"],
+	["Bacon Gargonzola Cheese", "gorgonzola cheese", "diced cherrywood smoked bacon", "blue cheese dressing", "panko bread crumbs", "pepper", "chopped parsley"],
+	["Maxwell Style", "lobster meat", "asparagus spears", "bearnaise sauce"],
+	["Oscar Style", "small jumbo lump crabmeat", "asparagus spears", "bearnaise sauce"],
+	["Bacon Wrapped Shrimp", "8/10 count shrimp", "horseradish", "cherrywood smoked bacon", "southern comfort barbecue sauce", "chopped parsley"],
+	["Crab and Shrimp Del Mar", "16/20 count shrimp", "del mar crab", "whole grained mustard dijonnaise", "micro cilantro"],
+	["Mixed Grill", "16/20 shrimp", "andouille sausage", "andouille sausage gravy"],
+	["Maryland Crab Cake", "crab cake", "corn relish", "cajun remoulade", "micro cilantro"],
+	["Red King Crab Legs", "red king crab legs", "butter tower", "lemon fork"],
+	["Cold Water Lobster Tail", "galapagos island cold water red lobster tail", "white wine", "butter", "paprika", "chopped parsley", "lemon fork", "butter tower"],
+	["Bananas Foster", "butter", "brown sugar", "sliced bananas", "banana liqueur", "dark rum", "cinnamon", "vanilla bean ice cream"],
+	["Vanilla Cognac Brownie", "vanilla bean ice cream", "chocolate fudge brownie", "vanilla cognac", "vanilla bean creme anglaise", "hot fudge", "spiced pecans", "raspberries"],
+	["Carrot Cake", "eggs", "cinnamon", "allspice", "cloves", "carrots", "golden raisins", "pineapple", "walnuts", "cream cheese frosting", "caramel sauce", "powdered sugar", "mint sprig"],
+	["Triple Chocolate Cake", "chocolate cake", "chocolate fudge icing", "chocolate sauce", "mini chocolate chips"],
+	["Creme Brulee", "custard", "vanilla beans", "caramelized sugar crust", "raspberries", "mint"],
+	["Peanut Butter Cup", "peanut butter and graham cracker crust", "peanut butter cream filling", "chocolate ganache", "peanut tuile", "caramel sauce", "chocolate sauce", "whipped cream", "mint"],
+	["Fresh Fruit Sorbet", "seasonally flavored sorbet", "mint sprig"],
+	["Premium Ice Cream", "choice of flavored ice cream", "mint sprig", "chocolate sauce", "hot fudge", "caramel sauce"],
+	["Kid's Chicken Fingers", "chicken fingers", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"],
+	["Kid's Macaroni and Cheese", "macaroni and cheese", "chicken*", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"],
+	["kidsSalmon", "grilled salmon filet", "lemon wedge", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"],
+	["kidsFilet", "tenderloin medallion", "steak butter", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"],
+	["kidsBurger", "prime hamburger", "steak butter", "french fries*", "garlic mashed potatoes*", "garlic mashed potatoes*", "fresh fruit*", "chips*", "raw broccoli*", "steamed broccoli*"],
+	["sweetSpicy", "sweet chile sauce", "mayonnaise", "hot mustard sauce"],
+	["crabMix", "eggs", "pancake mix", "mayonnaise", "dijon mustard", "chopped parsley", "old bay seasoning", "tabasco sauce", "worcestershire sauce", "small jumbo lump crabmeat"],
+	["cornRelish", "yellow corn", "red onions", "red pepper", "chopped parsley", "basil"],
+	["remoulade", "mayonnaise", "garlic", "shallots", "chopped parsley", "lemon juice", "worcestershire sauce", "eggs", "capers", "dijon mustard", "cayenne pepper", "sriracha sauce"],
+	["bisque", "minors crab base", "white wine", "yellow corn", "heavy cream", "half and half", "corn starch", "tabasco", "lemon juice", "salt", "white pepper"],
+	["delMarCrab", "clarified butter", "garlic", "heavy cream", "special crab meat", "chives"],
+	["dijonnaise", "hollandaise", "whole grained mustard dijonnaise", "chives"],
+	["andouilleGravy", "canola oil", "andouille sausage", "onions", "celery", "green peppers", "flour", "bay leaves", "mustard", "salt", "white pepper", "cayenne pepper", "basil", "thyme", "kitchen bouquet", "garlic", "beef stock"],
+	["blackenedSeasoning", "paprika", "dry basil", "dry oregano", "garlic", "onion powder", "cayenne pepper", "black pepper", "salt", "sugar", "dry thyme"],
+	["asianGinger", "lime juice", "soy sauce", "sweet chili sauce", "chili paste", "sweet soy sauce", "wasabi powder", "pickled ginger", "cilantro", "mint"],
+	["cornPoblano", "clarified butter", "green chiles", "chili powder", "garlic", "oregano", "cilantro", "cumin", "salt", "long grain rice", "chicken stock", "corn", "poblano peppers", "butter"],
+	["mojoSauce", "oil", "garlic", "orange zest", "orange juice", "lime juice", "cilantro", "mint", "oregano", "cumin", "brown sugar", "salt", "pepper"],
+	["furikake", "nori", "sesame seeds", "orange zest", "lime zest", "lemon zest", "chili flakes"],
+	["ahiVegetables", "shiitake mushrooms", "red bell peppers", "green onions", "asparagus"],
+	["gingerMirin", "mirin", "soy ginger", "corn starch"],
+	["mignonette", "champagne vinegar", "apple cider vinegar", "sparkling wine", "white pepper", "shallots", "kosher salt", "honey", "granny smith apples"],
+];

@@ -8,13 +8,16 @@ function gradeSubmission(submission, dish)
     // - if yes: remove this ingredient and this answer
 
     //var ingredientsLeft = Array.from(dish.ingredients);
-    var ingredientsMatched = [];
-    var answersLeft = Array.from(submission);
-    var answersMatched = [];
+    const ingredientsMatched = [];
+    const answersLeft = Array.from(submission);
+    const answersMatched = [];
+    const answersCorrect = [];
 
     for(var i = 0; i < dish.ingredients.length; i++)
     {
         if(answersLeft.length == 0) {break;}
+
+        var answerCorrect = false;
 
         for(var a = 0; a < answersLeft.length; a++)
         {
@@ -23,17 +26,21 @@ function gradeSubmission(submission, dish)
                 ingredientsMatched.push(dish.ingredients[i]);
                 answersMatched.push(answersLeft.splice(a, 1));
 
+                answerCorrect = true;
+
                 break;
             }
         }
+
+        answersCorrect.push(answerCorrect);
     }
 
-    return [answersMatched, answersLeft];
+    return [answersMatched.length, answersCorrect, answersLeft];
 }
 
 function matchAnswer(answer, ingredient)
 {
-    return answer == ingredient;
+    return answer.includes(ingredient);
 }
 
 function createCorrection(submission, dish, ingredientIndex) {
