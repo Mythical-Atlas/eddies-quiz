@@ -472,7 +472,7 @@ function selectItem() {
 }
 
 function submitAnswer() {
-    let submission = document.getElementById("subtxt").value.toLowerCase();
+    const submission = document.getElementById("subtxt").value.toLowerCase().split(",");
 
     let ingredientPoints = [];
     let totalCorrect = 0;
@@ -581,8 +581,8 @@ function submitAnswer() {
         document.getElementById("note2txt").hidden = true;
     }
 
-    document.getElementById('question').hidden = true
-    document.getElementById('answer').hidden = false
+    document.getElementById('question').hidden = true;
+    document.getElementById('answer').hidden = false;
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {

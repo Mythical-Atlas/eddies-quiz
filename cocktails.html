@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Eddie's Quiz</title>
+        <script type="text/javascript" src="cocktail_data.js"></script>
+        <script type="text/javascript" src="cocktail_code.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="center_block">
+            <h1 class="header">Eddie's Quiz</h1>
+            <p class="subheader"><i>An unofficial menu study tool created by Ben Correll</i></p>
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <a href="ingredients.html">Dish Ingredients</a>
+                <a href="sizes.html">Portion Sizes</a>
+                <span>Creative Cocktails</span>
+                <a href="contact.html" style="float:right">Contact</a>
+            </div>
+            <div class="content">
+                <div id="selection">
+                    <label for="multChoice">Multiple choice:</label>
+                    <input type="checkbox" id="multChoice" style="width: 2vh; height: 2vh;">
+                    <br><br>
+                    <label for="includeAmounts">Include amounts:</label>
+                    <input type="checkbox" id="includeAmounts" style="width: 2vh; height: 2vh;">
+                    <br><br>
+                    <label for="cockSelect">Cocktails:</label>
+                    <br>
+                    <select name="cockSelect" id="cockSelect" class="drop_down"></select>
+                    <br><br>
+                    <button onclick="selectCocktail()" class="button">Select</button>
+                </div>
+                <div id="question" hidden=true>
+                    <p id="glassText" style="text-align: left;"></p>
+                    <textarea id="glassInput" class="text_entry" style="resize: none; height: 3vh;"></textarea>
+                    <br><br>
+                    <p id="ingredsText" style="text-align: left;"></p>
+                    <label for="ingredsInput">Separate ingredients with commas.</label>
+                    <textarea id="ingredsInput" class="text_entry" style="resize: none; height: 20vh;"></textarea>
+                    <br><br>
+                    <button onclick="submitAnswer()" class="button">Submit</button>
+                    <br><br>
+                    <button onclick="resetPage()" class="button">Back to Cocktail Selection</button>
+                </div>
+                <div id="answer" hidden=true>
+                    <p id="answerText"></p>
+                    <p id="glassAnswerText" style="text-align: left;"></p>
+                    <p id="ingredListText" style="text-align: left;"></p>
+                    <button onclick="selectCocktail()" class="button">Retry</button>
+                    <br><br>
+                    <button onclick="resetPage()" class="button">Back to Cocktail Selection</button>
+                </div>
+            </div>
+            <span class="copyright">Copyright Ben Correll 2023</span>
+            <span class="version">Version 1.0</span>
+        </div>
+    </body>
+</html>

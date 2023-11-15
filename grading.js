@@ -1,3 +1,41 @@
+// submission is an array of answers
+// dish is an object containing an array of ingredients
+function gradeSubmission(submission, dish)
+{
+    // for each ingredient:
+    // - iterate through submission indices (that haven't already been matched)
+    // - check if answer matches ingredient
+    // - if yes: remove this ingredient and this answer
+
+    //var ingredientsLeft = Array.from(dish.ingredients);
+    var ingredientsMatched = [];
+    var answersLeft = Array.from(submission);
+    var answersMatched = [];
+
+    for(var i = 0; i < dish.ingredients.length; i++)
+    {
+        if(answersLeft.length == 0) {break;}
+
+        for(var a = 0; a < answersLeft.length; a++)
+        {
+            if(matchAnswer(answersLeft[a], dish.ingredients[i]))
+            {
+                ingredientsMatched.push(dish.ingredients[i]);
+                answersMatched.push(answersLeft.splice(a, 1));
+
+                break;
+            }
+        }
+    }
+
+    return [answersMatched, answersLeft];
+}
+
+function matchAnswer(answer, ingredient)
+{
+    return answer == ingredient;
+}
+
 function createCorrection(submission, dish, ingredientIndex) {
     for(let i = 0; i < shorthands.length; i++) {
         // the first index is the correct version of the shorthand
